@@ -1,0 +1,22 @@
+doctype html  
+html(lang='en')  
+ head
+   title Processing Payment
+ body
+   div.container
+         p
+            Processing Processing your payment, please wait...
+   form(method='POST' action=`${action}` name='server_request' target='_top')
+        table(width="80%" align="center" border="0" cellpadding="0" cellspacing="0")
+            tr
+                td
+                    input(type="hidden" name="encrypted_request" id="encrypted_request" value=`${encrypted_request}`)
+                td
+                    input(type="hidden" name="merchant_id" id="merchant_id" value=`${merchant_id}`)
+                td
+                    input(type="hidden" name="access_token" id="access_token" value=`${access_token}`)
+
+
+   script.
+        document.server_request.submit()
+

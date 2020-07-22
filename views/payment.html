@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donation payment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div style="margin:100px;">
+        <div class="jumbotron" style="padding:40px;">
+                    
+            <form method="POST" action="/start/payment">
+                
+                <div class="form-group row">
+                    <label for="productName" class="col-sm-2 col-form-label text-right">Payment For</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" value="Donation" id="productName" name="productName" placeholder="Product name" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="amount" class="col-sm-2 col-form-label text-right">Amount</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" value="" id="amount" name="amount" placeholder="Amount" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="customerName" class="col-sm-2 col-form-label text-right">Customer Name</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" value="" id="customerName" name="customerName" placeholder="Customer Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="customerEmail" class="col-sm-2 col-form-label text-right">Customer Email</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" value="" id="customerEmail" name="customerEmail" placeholder="Customer Email" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="customerMobile" class="col-sm-2 col-form-label text-right">Customer Mobile</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" value="" id="customerMobile" name="customerMobile" placeholder="Customer Mobile" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
